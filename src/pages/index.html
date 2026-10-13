@@ -1,0 +1,314 @@
+<!-- @page title="RunMoto: motorolerių ir motociklų dalys, naujos ir naudotos" description="Naujos ir patikrintos naudotos motorolerių bei motociklų dalys. Pasirinkite techniką ir matysite tik tinkančias dalis. Verslo kainos servisams." body="page-home" css="home" js="home" preload='<link rel="preload" as="image" href="assets/media/hero.jpg">' -->
+
+<section class="hero on-dark" data-parallax-root aria-labelledby="hero-title">
+  <div class="hero__media" aria-hidden="true">
+    <img src="assets/media/hero.jpg" alt="" width="2400" height="1600" fetchpriority="high" data-zoom-parallax>
+  </div>
+  <div class="hero__grid container">
+    <div class="hero__copy">
+      <p class="eyebrow">Motoroleriams ir motociklams</p>
+      <h1 class="display hero__title" id="hero-title" data-split>Dalys, kurios<br>tinka iš <span class="hl">pirmo</span><br>karto</h1>
+      <p class="lead">Naujos ir patikrintos naudotos dalys, alyvos bei ekipiruotė. Pasirinkite savo techniką ir matysite tik jai tinkančias dalis.</p>
+      <ul class="hero__facts" data-reveal-stagger>
+        <li><svg class="i" aria-hidden="true"><use href="#i-package"></use></svg>Išsiunčiame tą pačią dieną iki 14 val.</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-recycle"></use></svg>Naudotos dalys su būklės klase</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-briefcase"></use></svg>Verslo kainos servisams</li>
+      </ul>
+    </div>
+
+    <div class="finder" data-finder data-reveal>
+      <div class="finder__tabs" role="tablist" aria-label="Dalių paieškos būdas">
+        <button type="button" role="tab" id="ft-veh" aria-controls="fp-veh" aria-selected="true" data-ftab="veh"><svg class="i" aria-hidden="true"><use href="#i-garage"></use></svg>Pagal techniką</button>
+        <button type="button" role="tab" id="ft-eng" aria-controls="fp-eng" aria-selected="false" tabindex="-1" data-ftab="eng"><svg class="i" aria-hidden="true"><use href="#i-engine"></use></svg>Pagal variklį</button>
+        <button type="button" role="tab" id="ft-oem" aria-controls="fp-oem" aria-selected="false" tabindex="-1" data-ftab="oem"><svg class="i" aria-hidden="true"><use href="#i-barcode"></use></svg>OEM kodas</button>
+      </div>
+
+      <div class="finder__panel" role="tabpanel" id="fp-veh" aria-labelledby="ft-veh">
+        <p class="finder__title">Raskite dalis savo technikai</p>
+        <form class="vpick" data-vpick="hero">
+          <div class="vpick__type" role="group" aria-label="Transporto priemonės tipas">
+            <button type="button" aria-pressed="true" data-vtype="scooter"><svg class="i" aria-hidden="true"><use href="#i-moped"></use></svg>Motoroleris</button>
+            <button type="button" aria-pressed="false" data-vtype="moto"><svg class="i" aria-hidden="true"><use href="#i-motorcycle"></use></svg>Motociklas</button>
+          </div>
+          <div class="vpick__row">
+            <div class="field"><label class="field__label" for="h-make">Gamintojas</label><select class="select" id="h-make" data-vmake></select></div>
+            <div class="field"><label class="field__label" for="h-model">Modelis</label><select class="select" id="h-model" data-vmodel disabled></select></div>
+            <div class="field"><label class="field__label" for="h-year">Metai</label><select class="select" id="h-year" data-vyear disabled></select></div>
+          </div>
+          <button class="btn btn--accent btn--block" type="submit" data-vsubmit disabled><svg class="i" aria-hidden="true"><use href="#i-magnifying-glass"></use></svg>Rodyti tinkamas dalis</button>
+        </form>
+        <p class="finder__note"><svg class="i i--sm" aria-hidden="true"><use href="#i-info"></use></svg>Technika išsaugoma „Mano garaže“, todėl visoje parduotuvėje matysite, kas tinka.</p>
+      </div>
+
+      <div class="finder__panel" role="tabpanel" id="fp-eng" aria-labelledby="ft-eng" hidden>
+        <p class="finder__title">Pasirinkite variklio platformą</p>
+        <p class="finder__sub">Taip ieško dauguma motorolerių savininkų: viena platforma tinka keliems modeliams.</p>
+        <div class="engine-grid" data-engine-grid></div>
+      </div>
+
+      <div class="finder__panel" role="tabpanel" id="fp-oem" aria-labelledby="ft-oem" hidden>
+        <p class="finder__title">Turite originalų dalies kodą?</p>
+        <p class="finder__sub">Įveskite gamintojo (OEM) kodą. Rasime originalą, analogus ir naudotas dalis su tuo pačiu kodu.</p>
+        <form class="oem-form" data-oem-form>
+          <label class="field__label" for="oem-q">OEM kodas</label>
+          <div class="oem-form__row">
+            <input class="input mono" id="oem-q" type="text" placeholder="pvz. 1WS-F582U-00" autocomplete="off" spellcheck="false" required>
+            <button class="btn btn--accent" type="submit">Ieškoti</button>
+          </div>
+        </form>
+        <p class="finder__note"><svg class="i i--sm" aria-hidden="true"><use href="#i-info"></use></svg>Kodą rasite ant pačios dalies arba gamintojo dalių kataloge.</p>
+      </div>
+    </div>
+  </div>
+  <div class="hero__strip">
+    <div class="container hero__strip-inner">
+      <span><strong>Išsiuntimas</strong> tą pačią darbo dieną</span>
+      <span><strong>Omniva, LP Express, DPD, Venipak</strong></span>
+      <span><strong class="num">14</strong> d. grąžinimas</span>
+      <span>Mokėjimas dalimis</span>
+    </div>
+  </div>
+</section>
+
+<section class="section cats" id="kategorijos" aria-labelledby="cats-title">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-head__text">
+        <h2 class="h2" id="cats-title" data-split>Kategorijos</h2>
+        <p class="lead">Nuo cilindro iki šalmo. Suskirstyta taip, kaip ieško meistrai: pagal mazgą ir variklio platformą.</p>
+      </div>
+      <button class="link-arrow" type="button" data-open-mega-cta>Visos 13 kategorijų<svg class="i" aria-hidden="true"><use href="#i-arrow-right"></use></svg></button>
+    </div>
+    <div class="cats__grid" data-reveal-stagger>
+      <a class="cat cat--xl" href="#prekes" data-cat="variklis">
+        <img src="assets/media/cat-variklis.jpg" alt="" width="1200" height="1500" loading="lazy">
+        <span class="cat__body"><span class="cat__icon"><svg class="i" aria-hidden="true"><use href="#i-engine"></use></svg></span><span class="cat__name">Variklio dalys</span><span class="cat__sub">Cilindrų komplektai, stūmokliai, tarpinės, guoliai</span></span>
+        <span class="cat__arrow"><svg class="i" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></span>
+      </a>
+      <a class="cat" href="#prekes" data-cat="transmisija">
+        <img src="assets/media/cat-transmisija.jpg" alt="" width="1200" height="1500" loading="lazy">
+        <span class="cat__body"><span class="cat__icon"><svg class="i" aria-hidden="true"><use href="#i-gear-six"></use></svg></span><span class="cat__name">Transmisija</span><span class="cat__sub">Variatoriai, diržai, sankabos, grandinės</span></span>
+        <span class="cat__arrow"><svg class="i" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></span>
+      </a>
+      <a class="cat" href="#prekes" data-cat="stabdziai">
+        <img src="assets/media/cat-stabdziai.jpg" alt="" width="1200" height="1500" loading="lazy">
+        <span class="cat__body"><span class="cat__icon"><svg class="i" aria-hidden="true"><use href="#i-circles-three"></use></svg></span><span class="cat__name">Stabdžiai</span><span class="cat__sub">Diskai, kaladėlės, suportai</span></span>
+        <span class="cat__arrow"><svg class="i" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></span>
+      </a>
+      <a class="cat" href="#prekes" data-cat="elektra">
+        <img src="assets/media/cat-elektra.jpg" alt="" width="1200" height="1500" loading="lazy">
+        <span class="cat__body"><span class="cat__icon"><svg class="i" aria-hidden="true"><use href="#i-lightning"></use></svg></span><span class="cat__name">Elektronika ir apšvietimas</span><span class="cat__sub">Akumuliatoriai, žvakės, CDI, žibintai</span></span>
+        <span class="cat__arrow"><svg class="i" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></span>
+      </a>
+      <a class="cat" href="#prekes" data-cat="plastikai">
+        <img src="assets/media/cat-kebulas.jpg" alt="" width="1200" height="1500" loading="lazy">
+        <span class="cat__body"><span class="cat__icon"><svg class="i" aria-hidden="true"><use href="#i-motorcycle"></use></svg></span><span class="cat__name">Plastikai ir išorė</span><span class="cat__sub">Plastikai, sėdynės, stiklai</span></span>
+        <span class="cat__arrow"><svg class="i" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></span>
+      </a>
+      <a class="cat" href="#prekes" data-cat="padangos">
+        <img src="assets/media/cat-padangos.jpg" alt="" width="1200" height="1500" loading="lazy">
+        <span class="cat__body"><span class="cat__icon"><svg class="i" aria-hidden="true"><use href="#i-tire"></use></svg></span><span class="cat__name">Ratai ir padangos</span><span class="cat__sub">R10-R17, kameros, ratlankiai</span></span>
+        <span class="cat__arrow"><svg class="i" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></span>
+      </a>
+      <a class="cat" href="#prekes" data-cat="chemija">
+        <img src="assets/media/cat-chemija.jpg" alt="" width="1200" height="1500" loading="lazy">
+        <span class="cat__body"><span class="cat__icon"><svg class="i" aria-hidden="true"><use href="#i-drop"></use></svg></span><span class="cat__name">Alyvos ir chemija</span><span class="cat__sub">2T, 4T, transmisinė alyva, skysčiai</span></span>
+        <span class="cat__arrow"><svg class="i" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></span>
+      </a>
+      <a class="cat cat--wide" href="#prekes" data-cat="apranga">
+        <img src="assets/media/cat-ekipiruote.jpg" alt="" width="1200" height="1500" loading="lazy">
+        <span class="cat__body"><span class="cat__icon"><svg class="i" aria-hidden="true"><use href="#i-hard-hat"></use></svg></span><span class="cat__name">Ekipiruotė</span><span class="cat__sub">Šalmai, striukės, pirštinės, apsaugos</span></span>
+        <span class="cat__arrow"><svg class="i" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></span>
+      </a>
+      <a class="cat cat--wide cat--used" href="#naudotos">
+        <img src="assets/media/used-parts.jpg" alt="" width="1800" height="2400" loading="lazy">
+        <span class="cat__body"><span class="cat__icon"><svg class="i" aria-hidden="true"><use href="#i-recycle"></use></svg></span><span class="cat__name">Naudotos dalys</span><span class="cat__sub">Originalios dalys iš išardytos technikos, su būklės klase</span></span>
+        <span class="cat__arrow"><svg class="i" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></span>
+      </a>
+    </div>
+    <ul class="cats__more" data-reveal-stagger>
+      <li><a class="chip" href="#prekes"><svg class="i" aria-hidden="true"><use href="#i-gas-can"></use></svg>Kuro ir oro sistema</a></li>
+      <li><a class="chip" href="#prekes"><svg class="i" aria-hidden="true"><use href="#i-wrench"></use></svg>Duslintuvai</a></li>
+      <li><a class="chip" href="#prekes"><svg class="i" aria-hidden="true"><use href="#i-nut"></use></svg>Važiuoklė ir rėmas</a></li>
+      <li><a class="chip" href="#prekes"><svg class="i" aria-hidden="true"><use href="#i-toolbox"></use></svg>Įrankiai ir aksesuarai</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--tight products" id="prekes" aria-labelledby="prod-title">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-head__text">
+        <h2 class="h2" id="prod-title" data-split>Populiariausios dalys</h2>
+      </div>
+      <div class="ptabs" role="tablist" aria-label="Prekių rinkiniai" data-ptabs>
+        <button class="chip" type="button" role="tab" id="pt-bestseller" aria-controls="ptrack" aria-selected="true" data-ptab="bestseller">Perkamiausios</button>
+        <button class="chip" type="button" role="tab" id="pt-new" aria-controls="ptrack" aria-selected="false" tabindex="-1" data-ptab="new">Naujienos</button>
+        <button class="chip" type="button" role="tab" id="akcijos" aria-controls="ptrack" aria-selected="false" tabindex="-1" data-ptab="sale">Akcijos</button>
+        <button class="chip" type="button" role="tab" id="pt-fit" aria-controls="ptrack" aria-selected="false" tabindex="-1" data-ptab="fit" data-fit-tab hidden>Tinka jūsų technikai</button>
+      </div>
+    </div>
+    <div class="vctx" data-vctx></div>
+    <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Prekės">
+      <div class="carousel__track" id="ptrack" data-ptrack role="tabpanel" aria-labelledby="pt-bestseller"></div>
+      <div class="carousel__nav">
+        <div class="carousel__bar" aria-hidden="true"><span></span></div>
+        <div class="carousel__btns">
+          <button class="icon-btn icon-btn--round" type="button" data-prev><svg class="i" aria-hidden="true"><use href="#i-arrow-left"></use></svg><span class="sr-only">Ankstesnės</span></button>
+          <button class="icon-btn icon-btn--round" type="button" data-next><svg class="i" aria-hidden="true"><use href="#i-arrow-right"></use></svg><span class="sr-only">Kitos</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section used" id="naudotos" aria-labelledby="used-title">
+  <div class="container">
+    <div class="split">
+      <a class="split__panel split__panel--new on-dark" href="#prekes" data-parallax-root>
+        <img src="assets/media/garage.jpg" alt="" width="2400" height="1800" loading="lazy" data-parallax="0.14">
+        <span class="split__body">
+          <span class="badge badge--new">Naujos dalys</span>
+          <span class="h2">Originalai ir patikimi analogai</span>
+          <span class="split__text">Malossi, Athena, NGK, Motul, EBC ir kiti gamintojai. Su garantija ir aiškiu suderinamumu.</span>
+          <span class="link-arrow">Žiūrėti naujas dalis<svg class="i" aria-hidden="true"><use href="#i-arrow-right"></use></svg></span>
+        </span>
+      </a>
+      <div class="split__panel split__panel--used">
+        <div class="split__usedhead">
+          <span class="badge badge--used"><svg class="i" aria-hidden="true"><use href="#i-recycle"></use></svg>Naudotos dalys</span>
+          <h2 class="h2" id="used-title" data-split>Naudota nereiškia<br>neaišku</h2>
+          <p class="split__text">Kiekviena naudota dalis turi nuotraukas, donoro modelį ir būklės klasę. Dažnai gerokai pigiau nei nauja.</p>
+        </div>
+        <ol class="grades" data-reveal-stagger>
+          <li><span class="grades__mark">A</span><span><strong>Puiki būklė.</strong> Minimalios naudojimo žymės, patikrinta ir paruošta montuoti.</span></li>
+          <li><span class="grades__mark">B</span><span><strong>Gera būklė.</strong> Matomos naudojimo žymės, funkcionalumas patikrintas.</span></li>
+          <li><span class="grades__mark">C</span><span><strong>Su defektais.</strong> Kosmetiniai defektai arba reikalingas smulkus remontas, viskas aprašyta.</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="donors">
+      <div class="donors__head">
+        <h3 class="h3">Šiuo metu ardome</h3>
+        <p class="muted">Šios technikos dalis galite užsisakyti jau dabar. Neradote? Parašykite, patikrinsime sandėlyje.</p>
+      </div>
+      <ul class="donors__list" data-donors></ul>
+    </div>
+
+    <div class="sec-head" style="margin-top:clamp(40px,5vw,72px)">
+      <div class="sec-head__text"><h3 class="h3">Naujausios naudotos dalys</h3></div>
+      <a class="link-arrow" href="#naudotos" data-demo="Naudotų dalių katalogas su filtrais pagal būklę ir donorą bus kitame etape">Visos naudotos dalys<svg class="i" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+    </div>
+    <div class="pgrid" data-used-grid></div>
+  </div>
+</section>
+
+<section class="b2b on-dark" id="verslui" aria-labelledby="b2b-title" data-parallax-root>
+  <div class="b2b__media" aria-hidden="true"><img src="assets/media/b2b.jpg" alt="" width="2400" height="1607" loading="lazy" data-parallax="0.1"></div>
+  <div class="container b2b__grid">
+    <div class="b2b__copy">
+      <p class="eyebrow">Servisams ir verslui</p>
+      <h2 class="h2" id="b2b-title" data-split>Didmeninės kainos<br>jūsų servisui</h2>
+      <p class="lead">Užregistruokite įmonę ir prisijungę matysite savo kainų grupės kainas be PVM. Sąskaitos faktūros sugeneruojamos automatiškai.</p>
+      <ul class="b2b__list" data-reveal-stagger>
+        <li><svg class="i" aria-hidden="true"><use href="#i-tag"></use></svg><span><strong>Kainų grupės.</strong> Servisas, perpardavėjas ar didmena, kiekvienai sava nuolaida.</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-seal-check"></use></svg><span><strong>PVM kodo patikra VIES.</strong> ES įmonėms su galiojančiu PVM kodu taikomas 0 % PVM.</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-receipt"></use></svg><span><strong>Sąskaitos faktūros.</strong> PDF su kiekvienu užsakymu ir paskyroje.</span></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-arrows-left-right"></use></svg><span><strong>Prekių srautas.</strong> XML / CSV su likučiais jūsų sistemai.</span></li>
+      </ul>
+      <div class="b2b__cta">
+        <button class="btn btn--accent" type="button" data-demo="Verslo paskyros registracija su PVM kodo patikra (demo)">Registruoti įmonę<svg class="i" aria-hidden="true"><use href="#i-arrow-right"></use></svg></button>
+        <button class="btn btn--ghost" type="button" data-mode="b2b">Peržiūrėti verslo kainas</button>
+      </div>
+    </div>
+    <div class="b2b__card" data-reveal aria-live="polite">
+      <div class="b2b__card-head"><span class="badge badge--b2b">Kainų grupė „Servisas“</span><span class="mono b2b__card-sku">RM-AS0701</span></div>
+      <p class="b2b__card-title">Cilindro komplektas 70 cm³ Sport, Minarelli horizontalus LC</p>
+      <dl class="b2b__prices" data-b2b-prices></dl>
+      <div class="b2b__qty">
+        <p class="field__label">Kiekio nuolaidos</p>
+        <div class="b2b__tiers"><span>1 vnt.</span><span>nuo 5 vnt. <strong>−3 %</strong></span><span>nuo 10 vnt. <strong>−5 %</strong></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brands" aria-label="Prekių ženklai">
+  <div class="brands__track" data-marquee>
+    <ul class="brands__list" data-brands></ul>
+  </div>
+</section>
+
+<section class="section why" aria-labelledby="why-title">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-head__text">
+        <h2 class="h2" id="why-title" data-split>Kodėl RunMoto</h2>
+      </div>
+    </div>
+    <div class="why__grid" data-reveal-stagger>
+      <div class="why__item">
+        <span class="why__num num">14:00</span>
+        <p class="why__title">Išsiunčiame tą pačią dieną</p>
+        <p class="muted">Užsakius darbo dieną iki 14 val. Paštomatai visoje Lietuvoje, siuntimas ir į užsienį.</p>
+      </div>
+      <div class="why__item">
+        <span class="why__num"><span class="num" data-count-to="60">60</span> €</span>
+        <p class="why__title">Nemokamas pristatymas</p>
+        <p class="muted">Į Omniva, LP Express, DPD ar Venipak paštomatą. Atsiėmimas sandėlyje nemokamas visada.</p>
+      </div>
+      <div class="why__item">
+        <span class="why__num"><span class="num" data-count-to="14">14</span> d.</span>
+        <p class="why__title">Grąžinimas per 14 dienų</p>
+        <p class="muted">Netiko? Grąžinimą užregistruosite paskyroje, o pinigus grąžinsime per 3 darbo dienas.</p>
+      </div>
+      <div class="why__item">
+        <span class="why__num">1 €<span class="why__eq">=</span>1</span>
+        <p class="why__title">Lojalumo taškas</p>
+        <p class="muted">Taškus kaupiate su kiekvienu pirkiniu ir panaudojate kitam užsakymui. 100 taškų yra 1 €.</p>
+      </div>
+    </div>
+    <div class="why__pay">
+      <p class="field__label">Atsiskaitykite patogiai</p>
+      <!-- @include paymarks -->
+      <p class="muted why__lease"><svg class="i i--sm" aria-hidden="true"><use href="#i-hand-coins"></use></svg>Pirkiniams nuo 50 € galima mokėti dalimis.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight reviews" aria-labelledby="rev-title">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-head__text"><h2 class="h2" id="rev-title" data-split>Ką sako pirkėjai</h2></div>
+    </div>
+    <div class="reviews__grid" data-reviews data-reveal-stagger></div>
+  </div>
+</section>
+
+<section class="news on-dark" aria-labelledby="news-title">
+  <div class="news__media" aria-hidden="true">
+    <video muted loop playsinline preload="none" poster="assets/media/hero-poster.jpg" data-bg-video>
+      <source src="assets/media/hero.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="container news__grid">
+    <div>
+      <h2 class="h2" id="news-title" data-split>Pasiūlymai<br>jūsų technikai</h2>
+      <p class="lead">Akcijos, naujai gautos naudotos dalys ir sezoninės patikros priminimai. Tik tai, kas tinka jūsų motoroleriui ar motociklui.</p>
+    </div>
+    <form class="news__form" data-news-form novalidate>
+      <div class="field">
+        <label class="field__label" for="news-email">El. pašto adresas</label>
+        <div class="news__row">
+          <input class="input" id="news-email" type="email" autocomplete="email" placeholder="vardas@pastas.lt" required aria-describedby="news-err">
+          <button class="btn btn--accent" type="submit">Prenumeruoti</button>
+        </div>
+        <p class="field__error" id="news-err" hidden></p>
+      </div>
+      <label class="news__check"><input type="checkbox" data-news-veh> <span data-news-veh-label>Pridėti mano techniką iš garažo</span></label>
+      <p class="news__legal">Prenumeratą galite atšaukti bet kada. Daugiau informacijos <a href="#" data-demo>privatumo politikoje</a>.</p>
+    </form>
+    <button class="icon-btn news__toggle" type="button" data-video-toggle><svg class="i" aria-hidden="true"><use href="#i-pause"></use></svg><span class="sr-only">Sustabdyti fono vaizdo įrašą</span></button>
+  </div>
+</section>

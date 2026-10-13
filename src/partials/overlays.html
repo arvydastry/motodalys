@@ -1,0 +1,54 @@
+<div class="backdrop" data-backdrop aria-hidden="true"></div>
+
+<div class="drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" data-drawer data-lenis-prevent>
+  <div class="drawer__head">
+    <h2 class="drawer__title" id="cart-title" tabindex="-1">Krepšelis</h2>
+    <button class="icon-btn" type="button" data-close><svg class="i i--lg" aria-hidden="true"><use href="#i-x"></use></svg><span class="sr-only">Uždaryti krepšelį</span></button>
+  </div>
+  <div class="drawer__body" data-cart-body></div>
+  <div class="drawer__foot" data-cart-foot hidden></div>
+</div>
+
+<div class="drawer" id="wish-drawer" role="dialog" aria-modal="true" aria-labelledby="wish-title" data-drawer data-lenis-prevent>
+  <div class="drawer__head">
+    <h2 class="drawer__title" id="wish-title" tabindex="-1">Norų sąrašas</h2>
+    <button class="icon-btn" type="button" data-close><svg class="i i--lg" aria-hidden="true"><use href="#i-x"></use></svg><span class="sr-only">Uždaryti norų sąrašą</span></button>
+  </div>
+  <div class="drawer__body" data-wish-body></div>
+</div>
+
+<div class="drawer" id="garage-drawer" role="dialog" aria-modal="true" aria-labelledby="garage-title" data-drawer data-lenis-prevent>
+  <div class="drawer__head">
+    <h2 class="drawer__title" id="garage-title" tabindex="-1">Mano garažas</h2>
+    <button class="icon-btn" type="button" data-close><svg class="i i--lg" aria-hidden="true"><use href="#i-x"></use></svg><span class="sr-only">Uždaryti garažą</span></button>
+  </div>
+  <div class="drawer__body">
+    <p class="muted" style="font-size:.9rem;margin-bottom:18px">Išsaugokite savo motorolerį ar motociklą. Kortelėse ir prekės puslapyje matysite, ar dalis tinka būtent jam.</p>
+    <form class="vpick" data-vpick="garage">
+      <div class="vpick__type" role="group" aria-label="Transporto priemonės tipas">
+        <button type="button" aria-pressed="true" data-vtype="scooter"><svg class="i" aria-hidden="true"><use href="#i-moped"></use></svg>Motoroleris</button>
+        <button type="button" aria-pressed="false" data-vtype="moto"><svg class="i" aria-hidden="true"><use href="#i-motorcycle"></use></svg>Motociklas</button>
+      </div>
+      <div class="field"><label class="field__label" for="g-make">Gamintojas</label><select class="select" id="g-make" data-vmake></select></div>
+      <div class="field"><label class="field__label" for="g-model">Modelis</label><select class="select" id="g-model" data-vmodel disabled></select></div>
+      <div class="field"><label class="field__label" for="g-year">Metai</label><select class="select" id="g-year" data-vyear disabled></select></div>
+      <button class="btn btn--accent btn--block" type="submit" data-vsubmit disabled><svg class="i" aria-hidden="true"><use href="#i-plus"></use></svg>Įtraukti į garažą</button>
+    </form>
+    <div data-garage-list></div>
+  </div>
+</div>
+
+<div class="drawer drawer--left" id="menu-drawer" role="dialog" aria-modal="true" aria-label="Meniu" data-drawer data-lenis-prevent>
+  <div class="drawer__head">
+    <a class="logo" href="index.html"><img src="assets/img/brand/logo.svg" alt="RunMoto, pagrindinis puslapis" width="484" height="88" style="height:26px"></a>
+    <button class="icon-btn" type="button" data-close><svg class="i i--lg" aria-hidden="true"><use href="#i-x"></use></svg><span class="sr-only">Uždaryti meniu</span></button>
+  </div>
+  <div class="drawer__body" data-menu-body></div>
+</div>
+
+<dialog class="dialog" id="quick-view" aria-labelledby="qv-title" data-lenis-prevent>
+  <button class="icon-btn icon-btn--round dialog__close" type="button" data-dialog-close><svg class="i" aria-hidden="true"><use href="#i-x"></use></svg><span class="sr-only">Uždaryti</span></button>
+  <div data-qv-body></div>
+</dialog>
+
+<div class="toast" role="status" aria-live="polite" data-toast><svg class="i" aria-hidden="true"><use href="#i-check-circle-fill"></use></svg><span data-toast-text></span></div>

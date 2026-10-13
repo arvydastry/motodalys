@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="lt" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0E0F11">
+<link rel="icon" href="assets/img/brand/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..100,500..900&family=Geist+Mono:wght@400..600&family=Geist:wght@400..700&display=swap">
+<link rel="stylesheet" href="assets/css/base.css">
+{{ page_css }}
+{{ preload }}
+<script>document.documentElement.classList.replace('no-js','js');</script>
+</head>
+<body class="{{ body }}">
+<a class="skip-link" href="#turinys">Pereiti prie turinio</a>
+<!-- @include icons -->
+<!-- @include topbar -->
+<!-- @include header -->
+<main id="turinys" tabindex="-1">
+{{ content }}
+</main>
+<!-- @include footer -->
+<!-- @include overlays -->
+<!-- @include mobilebar -->
+<script src="assets/data/catalog.js"></script>
+<script src="assets/js/vendor/motion.js" defer></script>
+<script src="assets/js/vendor/lenis.min.js" defer></script>
+<script src="assets/js/core.js" defer></script>
+{{ page_js }}
+</body>
+</html>
